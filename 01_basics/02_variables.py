@@ -2,9 +2,9 @@
 #            A variable behaves as if it was the value it contains.
 
 
-first_name = "Ali"
+first_name = "Abdul"
 food = "Burger"
-email ="ali8@example.com"
+email ="abdul8@example.com"
 
 # Strings = A string is a series of characters , these include number, but we treat them as characters
 print(f"Hello {first_name}")   # This is f-string , here f means format, you place your variable inside placeholder {}

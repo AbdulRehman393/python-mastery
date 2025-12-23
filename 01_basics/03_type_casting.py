@@ -7,7 +7,7 @@
 # ------------------ Explicit typecasting -----------------------------
 # When manually converting a value or variable into a different datatype
 
-name = "Ali"
+name = "Abdul"
 age = 21
 gpa = 3.2
 student = False
