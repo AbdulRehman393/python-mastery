@@ -87,3 +87,9 @@ print(name)
 
 #Pro tip: If a function expects a list of integers, you should annotate it as List[int],
 # not just List. Being specific with your types can catch more potential bugs and misunderstandings.
+
+import typing
+List_of_numbers: typing.List[int] = [1, 2, 3]
+print(List_of_numbers)
+
+
