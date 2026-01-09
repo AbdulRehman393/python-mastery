@@ -63,6 +63,27 @@ print(age)
 car : str = "Mustang"
 print(car)
 
+# Another way to annotate variables is to use type comments where the interpreter will ignore the comments.
+
+captain = "Picard"      # type: str
+
+
+name : int = "hello"    # it's telling us that here int is expected not string
+print(name)
+
+# Any time a library is called, or an IDE works to scan your code, more computational overhead is required.
+#
+# Pro tip: Be strategic when annotating variables by type. This can add unnecessary overhead when overused.
+#
+# Type annotation is less common with Python users in data science, as it can be burdensome to manually map data ev
+# ery time a new set of data comes in. On the other hand, when doing object-oriented programming or writing functions, using type
+# annotations becomes extremely important because it helps clarify code since you are
+# dealing with more than just the built-in types.
+
+
+
+
+
 
 #Pro tip: If a function expects a list of integers, you should annotate it as List[int],
 # not just List. Being specific with your types can catch more potential bugs and misunderstandings.
