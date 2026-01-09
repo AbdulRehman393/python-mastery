@@ -36,7 +36,7 @@ is_online = True
 
 print(f"Are you a student?: {is_student}")
 
-# We will more likely to see the use of Boolean internally with in a program such as woking with if statemnet
+# We will more likely to see the use of Boolean internally with in a program such as woking with if statement
 
 if is_student:
     print("You are a student")
@@ -52,3 +52,17 @@ if is_online:
     print("You are online")
 else:
     print("You are offline")
+
+
+# Python Annotation
+# Think of annotating a variable as
+# if you were to put a label on a container—and anything in that container should hold what the label is describing.
+age : int = 34
+print(age)
+
+car : str = "Mustang"
+print(car)
+
+
+#Pro tip: If a function expects a list of integers, you should annotate it as List[int],
+# not just List. Being specific with your types can catch more potential bugs and misunderstandings.
