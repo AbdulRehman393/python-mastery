@@ -84,7 +84,7 @@ test = "How-much-wood-would-a-woodchuck-chuck"
 print(test.split("-"))         # prints ['How', 'much', 'wood', 'would', 'a', 'woodchuck', 'chuck']
 
 
-print("-".join(test.split()))  # prints "How-much-wood-would-a-woodchuck-chuck"
+print("-".join(test.split("-")))  # prints "How-much-wood-would-a-woodchuck-chuck"
 
 
 
