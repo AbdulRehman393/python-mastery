@@ -19,6 +19,10 @@ print(help(capitals))
 # checking how many key-value pairs in our dictionary
 print(len(capitals))
 
+# Adding key-value pair in a dictionary
+capitals["Turkey"] = "Ankara"
+
+
 # to get one of the values from a dictionary
 print(capitals.get("USA"))
 print(capitals.get("Japan"))  # if python doesn't find a key, it will return us None.
