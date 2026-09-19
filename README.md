@@ -1,414 +1,298 @@
+<div align="center">
+
 # 🐍 Python Mastery
 
-> A structured, hands-on Python learning journey from fundamentals to advanced concepts with 80+ practical examples, 20+ mini-exercises, OOP, APIs, and beginner projects.
+### A structured, hands-on Python learning journey from fundamentals to APIs and beginner projects.
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![Code Style](https://img.shields.io/badge/Code%20Style-PEP8-blue?style=for-the-badge)](https://pep8.org/)
-[![Status](https://img.shields.io/badge/Status-Active%20Learning-orange?style=for-the-badge)](#)
+[![Status](https://img.shields.io/badge/Status-Active%20Learning-orange?style=for-the-badge)](#-progress-tracker)
+
+*An evolving learning portfolio containing dozens of executable examples, practical exercises, visual references, and beginner-friendly command-line projects.*
+
+[Getting Started](#-getting-started) • [Learning Path](#-learning-path) • [Exercises](#-mini-exercises) • [Projects](#-beginner-projects)
+
+</div>
 
 ---
 
 ## 📋 Overview
 
-**python-mastery** is a comprehensive, self-paced Python learning repository designed for:
+`python-mastery` documents a progressive Python learning journey. The repository begins with syntax and data types, then moves through control flow, collections, functions, loops, object-oriented programming, exception handling, modules, REST APIs, practical exercises, and beginner projects.
 
-- **Absolute beginners** starting their Python journey
-- **Students building a learning portfolio** to showcase on GitHub
-- **Self-learners** who prefer hands-on examples over theory alone
-- **Developers** transitioning from other languages to Python
+The examples are intentionally small and independent so that learners can open a file, read the comments, run it, modify it, and observe the result.
 
-The repository contains **79 Python files** organized into **12 progressive modules**, from basic syntax to object-oriented programming, exception handling, modules, and REST API integration.
+Some modules are complete, while file handling, learning notes, automated tests, and intermediate projects are still being expanded.
 
-Every file includes:
-- ✅ Detailed inline comments explaining concepts
-- ✅ Real, executable code examples
-- ✅ Best practices and PEP 8 compliance
-- ✅ Type hints and docstrings where applicable
+## 🎯 Topics Covered
 
----
-
-## 🎯 What You Will Master
-
-### Core Python Skills
-- **Syntax & Data Types** → Variables, strings, numbers, type casting
-- **Control Flow** → if/elif/else, boolean logic, ternary operators
-- **Data Structures** → Lists, sets, tuples, dictionaries, 2D collections
-- **Functions** → Parameters, return values, default arguments, arbitrary arguments, lambdas
-- **Object-Oriented Programming** → Classes, objects, inheritance, polymorphism, abstraction
-- **Exception Handling** → try/except/finally, custom exceptions, input validation
-- **Iteration** → for loops, while loops, nested loops, break/continue
-
-### Advanced Concepts
-- **Modules & Packages** → Creating and importing reusable code
-- **Decorators** → Function and class decorators
-- **REST APIs** → HTTP requests, headers, status codes, authentication
-- **Command-Line Programs** → Interactive games, calculators, validators
-
----
+- Python syntax, variables, data types, and type casting
+- User input and formatted output
+- Strings, indexing, slicing, and formatting
+- Conditional statements and boolean logic
+- Lists, sets, tuples, dictionaries, and 2D collections
+- Functions, arguments, return values, docstrings, lambdas, and `map()`
+- `for`, `while`, and nested loops
+- Classes, objects, class variables, inheritance, abstraction, and polymorphism
+- Exception handling with `try`, `except`, `finally`, and `raise`
+- Modules, packages, and decorators
+- HTTP requests, REST APIs, headers, status codes, and authentication concepts
+- Interactive calculators, games, validators, and beginner projects
 
 ## 📁 Repository Structure
 
-```
+```text
 python-mastery/
-│
-├── 01_basics/                           [11 files] Foundation concepts
-│   ├── 01_display.py                    # Print functions and output
-│   ├── 02_variables.py                  # Variables, data types, f-strings
-│   ├── 03_type_casting.py               # Type conversion and validation
-│   ├── 04_user_input.py                 # Interactive input from users
-│   ├── 05_arithmetic_operators.py       # Math operations and operators
-│   ├── 06_builtinmath_functions.py      # round(), abs(), pow(), min(), max()
-│   ├── 07_math_module_function.py       # math module functions
-│   ├── 08_string_methods.py             # String manipulation methods
-│   ├── 09_string_indexing.py            # Slicing, indexing, reversal
-│   ├── 10_format_specifiers.py          # F-string formatting
-│   └── 11_random_numbers.py             # random module for randomness
-│
-├── 02_control-flow/                     [4 files] Decision making
-│   ├── 01_if_elif_else.py               # Conditional statements
-│   ├── 02_boolean_in_conditional.py     # Boolean values in conditions
-│   ├── 03_conditional_expressions.py    # Ternary operator (one-line if-else)
-│   └── 04_conditional_expressions.py    # More conditional examples
-│
-├── 03_data_structures/                  [5 files] Collections mastery
-│   ├── 01_list.py                       # Lists (ordered, mutable)
-│   ├── 02_set.py                        # Sets (unordered, unique)
-│   ├── 03_tuple.py                      # Tuples (immutable sequences)
-│   ├── 04_2d_collections.py             # 2D lists and nested loops
-│   └── 05_dictionary.py                 # Dictionaries (key-value pairs)
-│
-├── 04_functions/                        [8 files] Reusable code
-│   ├── 01_functions.py                  # Function basics and parameters
-│   ├── 02_default_arguments.py          # Functions with default values
-│   ├── 03_keyword_arguments.py          # Named arguments
-│   ├── 04_docstrings.py                 # Function documentation
-│   ├── 05_arbitrary_arguments.py        # *args and **kwargs
-│   ├── 06_lambda_functions.py           # Anonymous functions
-│   ├── 07_map_function.py               # map() with functions
-│   └── 01_Functions versus methods.png  # Visual reference guide
-│
-├── 05_oop/                              [8 files] Object-oriented programming
-│   ├── 01_classes_and_objects/          # Subdirectory with OOP examples
-│   │   ├── car.py                       # Car class definition
-│   │   └── main.py                      # Using the Car class
-│   ├── 02_class_variables.py            # Class vs instance variables
-│   ├── 03_inheritance.py                # Single inheritance
-│   ├── 04_multiple_inheritance.py       # Multiple inheritance
-│   ├── 05_abstract_class.py             # Abstract base classes
-│   ├── 06_super_function.py             # Using super() function
-│   ├── 07_polymorphism_inheritance.py   # Polymorphism concepts
-│   └── pillars-of-oop.jpg               # Visual reference: OOP pillars
-│
-├── 06_exception-handling/               [1 file] Error management
-│   ├── exception_handling.py            # try/except/finally, custom exceptions
-│   └── 01_try-except vs. raise.png      # Visual reference guide
-│
-├── 07_file-handling/                    [Planned] File I/O operations
-│   └── README.md                        # Placeholder for future content
-│
-├── 08_loops/                            [3 files] Iteration techniques
-│   ├── 01_while_loops.py                # While loops and input validation
-│   ├── 02_for_loops.py                  # For loops, range(), break, continue
-│   └── 03_nested_loops.py               # Nested loops and patterns
-│
-├── 09_mini-exercises/                   [25+ files] Practice problems
-│   ├── 01_mad_libs_game.py              # Interactive story game
-│   ├── 02_area_calc.py                  # Rectangle area and volume
-│   ├── 03_shopping_cart.py              # Shopping cart calculator
-│   ├── 04_circle_circumference.py       # Circle calculations
-│   ├── 05_circle_area.py                # Using math.pi
-│   ├── 06_hypotenuse_calculator.py      # Pythagorean theorem
-│   ├── 07_food_check.py                 # Y/N input validation
-│   ├── 08_name_checker.py               # Empty string validation
-│   ├── 09_arithmetic_calculator.py      # Basic calculator
-│   ├── 10_weight_convertor.py           # Unit conversion
-│   ├── 11_temperature_convertor.py      # Celsius to Fahrenheit
-│   ├── 12_user_input_validation.py      # Input validation patterns
-│   ├── 13_creditcard_last4.py           # String slicing
-│   ├── 15_compound_interest_calculator.py# Financial calculations
-│   ├── 16_rectangle_printer.py          # Pattern printing
-│   ├── 17_countdown_timer.py            # Formatted timer with time.sleep()
-│   ├─�� 18_shopping_cart.py              # Advanced cart with lists
-│   ├── 19_keypad_2d.py                  # 2D tuple iteration (phone keypad)
-│   ├── 20_number_guessing_game.py       # Number guessing game
-│   ├── 22_phone_number_generator.py     # Random phone number
-│   ├── 23_email_generator.py            # Email generation
-│   ├── 24_password_validator.py         # Password strength checking
-│   ├── 25_string_concat_args.py         # String concatenation
-│   └── README.md                        # Placeholder
-│
-├── 10_beyond-basics/                    [12 files] Advanced topics
-│   ├── 01_modules-and-packages/         # Module organization
-│   │   ├── 01_modules.py                # Python modules overview
-│   │   └── 02_packages.py               # Package structure
-│   ├── 02_api/                          # REST API integration
-│   │   ├── 01_requests.py               # HTTP requests basics
-│   │   ├── 02_urillib.py                # urllib alternative
-│   │   ├── 03_query_params_with_requests.py  # URL query parameters
-│   │   ├── 04_http_verbs.py             # GET, POST, PUT, DELETE
-│   │   ├── 05_headers_with_requests.py  # HTTP headers
-│   │   ├── 06_status_code_with_requests.py   # Status code handling
-│   │   ├── 07_headers_and_status_codes_exercises.py # Practice
-│   │   ├── 08_Basic_authentication.py   # Basic auth
-│   │   ├── 09_API_key_or_token_authentication.py    # Token auth
-│   │   └── images/                      # API reference diagrams
-│   ├── api.py                           # Complete PokeAPI example
-│   ├── decorator.py                     # Decorators tutorial
-│   └── README.md                        # Placeholder
-│
-├── 11_projects/                         [3 files] Beginner projects
-│   └── beginners/
-│       ├── concession_stand.py          # Movie concession stand program
-│       ├── number_guessing_game.py      # Guessing game with validation
-│       └── quiz_game.py                 # Multi-question quiz
-│
-├── 12_notes/                            [Planned] Learning notes
-│   └── README.md                        # Placeholder
-│
-├── .gitignore                           # Python-specific ignore patterns
-└── README.md                            # This file
+├── 01_basics/                  Python syntax, variables, strings, math, randomness
+├── 02_control-flow/            Conditions and boolean logic
+├── 03_data_structures/         Lists, sets, tuples, dictionaries, 2D collections
+├── 04_functions/               Functions, arguments, docstrings, lambdas, map()
+├── 05_oop/                     Classes, objects, inheritance, abstraction, polymorphism
+├── 06_exception-handling/      try/except/finally and raise
+├── 07_file-handling/           Planned file I/O lessons
+├── 08_loops/                   while, for, and nested loops
+├── 09_mini-exercises/          Calculators, games, validators, and utilities
+├── 10_beyond-basics/           Modules, packages, decorators, APIs, authentication
+├── 11_projects/                Beginner command-line projects
+├── 12_notes/                   Planned learning notes
+├── LICENSE                     MIT license
+├── pyproject.toml              Project metadata and tool configuration
+├── requirements.txt            Runtime dependencies
+├── .gitignore                  Python and IDE ignore rules
+└── README.md                   Project documentation
 ```
 
----
+The repository currently includes **78 Python files** across the learning modules, exercises, API lessons, and beginner projects. This number may change as the learning journey grows.
 
-## 🚀 Quick Start
+## 🧭 Learning Path
+
+The recommended order is:
+
+1. `01_basics` — Build a foundation with syntax, variables, strings, and math.
+2. `02_control-flow` — Practice decisions and boolean expressions.
+3. `03_data_structures` — Learn Python's core collections.
+4. `04_functions` — Write reusable and organized code.
+5. `08_loops` — Practice repetition and iteration.
+6. `09_mini-exercises` — Apply the concepts to small programs.
+7. `05_oop` — Learn classes, objects, inheritance, and polymorphism.
+8. `06_exception-handling` — Handle invalid input and runtime errors.
+9. `10_beyond-basics` — Explore modules, decorators, APIs, and authentication.
+10. `11_projects` — Combine your skills in complete beginner programs.
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- **Python 3.11+** ([Download](https://www.python.org/))
-- **Git** (for cloning the repository)
+- Python 3.11 or newer
+- Git
 - Basic command-line knowledge
 
-### 1. Clone the Repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/AbdulRehman393/python-mastery.git
 cd python-mastery
 ```
 
-### 2. Create a Virtual Environment (Recommended)
+### Create a virtual environment
 
 ```bash
-# On macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
+# Windows
+python -m venv .venv
+.venv\Scripts\activate
 
-# On Windows
-python -m venv venv
-venv\Scripts\activate
+# macOS/Linux
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
-### 3. Install Dependencies
+### Install dependencies
 
-Most examples use only Python's standard library. The API examples require `requests`:
+Most examples use Python's standard library. API examples use `requests`.
 
 ```bash
-pip install -r requirements.txt
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
-Or install manually:
+Project metadata and optional development tools are defined in [`pyproject.toml`](pyproject.toml).
 
-```bash
-pip install requests
-```
+## ▶️ Running Examples
 
-### 4. Run Your First Program
+Run a basic program:
 
-```bash
-python 01_basics/01_display.py
-```
-
----
-
-## 📖 Learning Path
-
-### ⭐ Recommended Study Order (25-35 hours)
-
-1. **01_basics** (2-3 hours) - Fundamentals and syntax
-2. **02_control-flow** (1 hour) - Decision making
-3. **03_data_structures** (2-3 hours) - Collections
-4. **04_functions** (2-3 hours) - Reusable code
-5. **08_loops** (1-2 hours) - Iteration
-6. **09_mini-exercises** (5-8 hours) - Practice problems
-7. **05_oop** (3-4 hours) - Object-oriented programming
-8. **06_exception-handling** (1 hour) - Error handling
-9. **10_beyond-basics** (4-5 hours) - Advanced topics
-10. **11_projects** (2-3 hours) - Complete applications
-
----
-
-## 🎮 Quick Examples
-
-### Run a Basic Program
 ```bash
 python 01_basics/01_display.py
 ```
 
-### Run an Interactive Game
+Run an OOP example:
+
 ```bash
-python 11_projects/beginners/quiz_game.py
+python 05_oop/01_classes_and_objects/main.py
 ```
 
-### Run an API Example
-```bash
-python 10_beyond-basics/api.py
-```
+Run a mini-exercise:
 
-### Run a Countdown Timer
 ```bash
 python 09_mini-exercises/17_countdown_timer.py
 ```
 
----
+Run a beginner project:
 
-## 💡 Key Features
-
-### ✅ Best Practices
-- Detailed comments and docstrings
-- PEP 8 style compliance
-- Type hints where applicable
-- Input validation and error handling
-- F-string formatting
-- DRY principle implementation
-- Modular code structure
-
-### 📊 Progress Tracker
-```
-✅ Basics (11 files)              100% Complete
-✅ Control Flow (4 files)         100% Complete
-✅ Data Structures (5 files)      100% Complete
-✅ Functions (8 files)            100% Complete
-✅ OOP (8 files)                  100% Complete
-✅ Exception Handling (1 file)    100% Complete
-✅ Loops (3 files)                100% Complete
-✅ Mini-Exercises (25+ files)     100% Complete
-✅ Advanced Topics (12 files)     100% Complete
-✅ Projects (3 files)             100% Complete
-🔄 File Handling                  0% (Planned)
-🔄 Notes                          0% (Planned)
+```bash
+python 11_projects/beginners/quiz_game.py
 ```
 
----
+Run the PokeAPI example:
 
-## 🛠️ Technologies Used
+```bash
+python 10_beyond-basics/api.py
+```
 
-- **Python 3.11+**
-- Standard libraries: `math`, `random`, `time`, `string`, `os`
-- External: `requests` (for API examples)
-- PEP 8 style guide
-- Git & GitHub
+The API example requires an internet connection and the `requests` package.
 
----
+## 💪 Mini-Exercises
 
-## 📋 Validation
+The `09_mini-exercises` directory contains small programs for practicing concepts such as:
 
-Verify all Python files compile:
+- Mad Libs and interactive storytelling
+- Area, circumference, hypotenuse, and compound-interest calculators
+- Shopping carts
+- Unit and temperature conversion
+- Input validation
+- Credit-card string slicing
+- Countdown timers
+- Number guessing
+- Phone and email generation
+- Password validation
+- String concatenation and formatting
+
+These programs are designed to be modified. Try adding validation, functions, tests, or a different user interface to each one.
+
+## 🧩 Beginner Projects
+
+The `11_projects/beginners` directory currently includes:
+
+- `concession_stand.py` — A command-line concession stand program
+- `number_guessing_game.py` — A number guessing game with input validation
+- `quiz_game.py` — A multiple-choice Python quiz
+
+## 🌐 API Learning
+
+The `10_beyond-basics` directory introduces:
+
+- Python modules and packages
+- Decorators
+- Basic HTTP requests with `requests`
+- Query parameters
+- HTTP verbs such as GET, POST, PUT, and DELETE
+- Request headers
+- HTTP status codes
+- Basic authentication
+- API-key and token authentication concepts
+- JSON response handling
+
+The API examples are educational demonstrations. Do not place real passwords, API keys, or tokens directly in source files.
+
+## 🛠️ Technologies
+
+- **Language:** Python 3.11+
+- **Standard library examples:** `math`, `random`, `time`, `string`, `os`, and `urllib`
+- **External dependency:** `requests`
+- **Project configuration:** `pyproject.toml`
+- **License:** MIT
+
+## 🧪 Validation
+
+The repository contains standalone learning scripts rather than a formal test suite. You can still verify that the Python files compile:
 
 ```bash
 python -m compileall .
 ```
 
----
+To compile an individual file:
 
-## 🗺️ Future Improvements
+```bash
+python -m py_compile path/to/example.py
+```
 
-- [ ] Complete file handling module
-- [ ] Advanced OOP patterns
-- [ ] SQLite database examples
-- [ ] Pandas data analysis
-- [ ] Web scraping with BeautifulSoup
-- [ ] Flask/FastAPI web applications
-- [ ] Unit testing with pytest
-- [ ] GitHub Actions CI/CD pipeline
+Many scripts are interactive and wait for user input, so they should be run manually rather than executed as a large automated batch.
 
----
+## 📊 Progress Tracker
+
+- ✅ Python basics
+- ✅ Control flow
+- ✅ Data structures
+- ✅ Functions
+- ✅ Loops
+- ✅ Object-oriented programming
+- ✅ Exception handling
+- ✅ Modules and API fundamentals
+- ✅ Beginner projects
+- 🔄 File handling
+- 🔄 Learning notes
+- 🔄 Automated tests
+- 🔄 Intermediate projects
+
+## 🗺️ Roadmap
+
+- [ ] Complete the file-handling module
+- [ ] Add learning notes for each major topic
+- [ ] Implement the `urllib` API example
+- [ ] Add tests for reusable functions
+- [ ] Add automated code-quality checks
+- [ ] Add intermediate projects
+- [ ] Add SQLite examples
+- [ ] Explore Pandas and data analysis
+- [ ] Explore Flask or FastAPI
+- [ ] Add more API integrations
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please:
+This is primarily a personal learning repository, but suggestions, corrections, and educational improvements are welcome.
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/improve-example`
-3. Commit changes: `git commit -m "Add improved example"`
-4. Push and open a Pull Request
+1. Fork the repository.
+2. Create a branch for your change.
+3. Add or improve an example.
+4. Run `python -m compileall .`.
+5. Commit your change with a clear message.
+6. Open a pull request describing what you changed.
 
----
+Please keep examples beginner-friendly, explain the learning objective, and avoid adding unnecessary dependencies.
 
-## ❓ FAQ
+## 📚 Resources
 
-**Q: What if I get an error?**
-A: Ensure Python 3.11+, virtual environment activated, and `pip install -r requirements.txt` run.
-
-**Q: Do I need to follow the order?**
-A: The path is recommended but flexible. Skip ahead if you already know basics.
-
-**Q: Can I modify the examples?**
-A: Absolutely! Experiment and break things—that's how you learn.
-
-**Q: Can I use this commercially?**
-A: Yes, under the MIT License.
-
----
-
-## 📚 Additional Resources
-
-- [Python Official Docs](https://docs.python.org/3/)
+- [Python Documentation](https://docs.python.org/3/)
+- [Python Tutorial](https://docs.python.org/3/tutorial/)
+- [PEP 8 Style Guide](https://peps.python.org/pep-0008/)
 - [Real Python](https://realpython.com/)
-- [PEP 8 Style Guide](https://pep8.org/)
-- [LeetCode](https://leetcode.com/) - Coding challenges
-
----
-
-## 🏆 What You'll Learn
-
-✅ Write Python programs from scratch  
-✅ Use variables, loops, and conditional logic  
-✅ Work with data structures  
-✅ Create reusable functions and modules  
-✅ Build object-oriented programs  
-✅ Handle errors gracefully  
-✅ Make HTTP requests and work with APIs  
-✅ Write interactive command-line programs  
-✅ Follow Python best practices  
-✅ Debug code independently  
-
----
+- [Python String Methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
 
 ## 📝 License
 
-MIT License - see [LICENSE](LICENSE) file for details.
-
----
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
 **Abdul Rehman**
+
 - GitHub: [@AbdulRehman393](https://github.com/AbdulRehman393)
 - Repository: [python-mastery](https://github.com/AbdulRehman393/python-mastery)
 
----
+## ⭐ Support
 
-## ⭐ Show Your Support
-
-- ⭐ Star this repository
-- 🍴 Fork for your learning journey
-- 📢 Share with other learners
-- 💬 Discuss by opening issues
-- 🤝 Contribute improvements
-
----
+If this repository helps you learn Python, consider starring it, sharing it with other learners, or opening an issue with suggestions.
 
 <div align="center">
 
-### 🚀 Ready to Master Python?
+### 🚀 Keep Learning, Keep Building
 
-**[Start Learning](./01_basics/)** • **[View Projects](./11_projects/)** • **[Try Exercises](./09_mini-exercises/)**
+**[Start with the Basics](./01_basics/)** • **[Try the Exercises](./09_mini-exercises/)** • **[Explore the Projects](./11_projects/)**
 
 ---
 
 *Built with ❤️ and lots of ☕ by Abdul Rehman*
 
-*Last Updated: January 2026 | Actively Maintained*
+*Last updated: September 19, 2026*
 
 </div>
