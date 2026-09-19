@@ -1,0 +1,59 @@
+[project]
+name = "python-mastery"
+version = "0.1.0"
+description = "A comprehensive Python learning repository with 80+ examples, from fundamentals to advanced concepts including OOP, APIs, and real-world projects."
+authors = [
+    {name = "Abdul Rehman", email = "khawajaabdulrehman393@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["python", "learning", "education", "tutorial", "beginner", "programming"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Education",
+    "Topic :: Software Development :: Learning",
+]
+dependencies = [
+    "requests>=2.31,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pylint>=3.0",
+    "black>=23.0",
+    "mypy>=1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/AbdulRehman393/python-mastery"
+Documentation = "https://github.com/AbdulRehman393/python-mastery#readme"
+Repository = "https://github.com/AbdulRehman393/python-mastery.git"
+"Bug Tracker" = "https://github.com/AbdulRehman393/python-mastery/issues"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.pyi?$'
+
+[tool.pylint.messages_control]
+disable = ["C0111", "C0103"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
