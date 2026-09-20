@@ -76,6 +76,8 @@ text = "This is another example"
 words = text.split()
 print(words)
 
+# this makes lowercase to uppercase and uppercase to lowercase
+print(text.swapcase())
 
 print(" ".join(["This","is","a","sentence"]))
 
